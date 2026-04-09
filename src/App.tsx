@@ -246,7 +246,7 @@ const Services = () => {
     {
       title: "QA & Test Automation",
       description: "Automatisierte Teststrategien, Unit- & Integrationstests zur Sicherung höchster Softwarequalität.",
-      icon: <TestTube className="w-6 h-6" />,
+      icon: <Cpu className="w-6 h-6" />,
       tags: ["Jest", "Cypress", "Playwright", "TDD"]
     }
   ];
