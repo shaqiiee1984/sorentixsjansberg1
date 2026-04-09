@@ -5,17 +5,17 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { 
-  Code2, 
-  Cpu, 
-  Layers, 
-  ShieldCheck, 
-  Zap, 
-  ArrowRight, 
-  Menu, 
-  X, 
-  ChevronRight, 
-  Globe, 
+import {
+  Code2,
+  Cpu,
+  Layers,
+  ShieldCheck,
+  Zap,
+  ArrowRight,
+  Menu,
+  X,
+  ChevronRight,
+  Globe,
   Terminal,
   Database,
   Cloud,
@@ -77,16 +77,16 @@ const Navbar = () => {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
-              href={link.href} 
+            <a
+              key={link.name}
+              href={link.href}
               className="text-sm font-medium hover:text-brand-accent transition-colors uppercase tracking-widest"
             >
               {link.name}
             </a>
           ))}
-          <a 
-            href="#contact" 
+          <a
+            href="#contact"
             className="px-5 py-2 bg-brand-black text-white text-sm font-bold uppercase tracking-widest hover:bg-brand-accent transition-all"
           >
             Projekt anfragen
@@ -102,24 +102,24 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <AnimatePresence>
         {mobileMenuOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             className="absolute top-full left-0 right-0 bg-white border-b border-zinc-200 p-6 md:hidden flex flex-col gap-4"
           >
             {navLinks.map((link) => (
-              <a 
-                key={link.name} 
-                href={link.href} 
+              <a
+                key={link.name}
+                href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-lg font-medium py-2 border-b border-zinc-100"
               >
                 {link.name}
               </a>
             ))}
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               onClick={() => setMobileMenuOpen(false)}
               className="mt-4 w-full py-4 bg-brand-black text-white text-center font-bold uppercase tracking-widest"
             >
@@ -146,19 +146,19 @@ const Hero = () => {
               <Logo className="items-start" showSubtitle={true} />
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-zinc-100 border border-zinc-200 rounded-full mb-6">
-              <span className="w-2 h-2 bg-brand-accent rounded-full animate-pulse"></span>
+              <span className="w-2 h-2 bg-brand-hero rounded-full animate-pulse"></span>
               <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-600">Freelance Software Engineering & Consulting</span>
             </div>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] mb-8 tracking-tighter">
               SOFTWARE <br />
-              <span className="text-brand-accent italic font-light">INTELLIGENCE</span> <br />
+              <span className="text-brand-hero italic font-light">INTELLIGENCE</span> <br />
               MATRICES.
             </h1>
             <p className="text-lg md:text-xl text-zinc-600 max-w-lg mb-10 leading-relaxed">
               Präzises Engineering trifft auf strukturierte Analyse. Sorentix liefert skalierbare Softwarelösungen und tiefgreifende Systembewertungen für den deutschen Mittelstand und innovative Startups.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#contact" className="px-8 py-4 bg-brand-black text-white font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-brand-accent transition-all group">
+              <a href="#contact" className="px-8 py-4 bg-brand-black text-white font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-brand-hero transition-all group">
                 Jetzt anfragen <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
               <a href="#services" className="px-8 py-4 border border-zinc-300 font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-zinc-50 transition-all">
@@ -166,8 +166,8 @@ const Hero = () => {
               </a>
             </div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
@@ -189,13 +189,13 @@ const Hero = () => {
                   </div>
                   <div className="text-zinc-400 mb-2">// Sorentix Intelligence Matrix v1.0</div>
                   <div className="text-brand-black">
-                    <span className="text-brand-accent">const</span> analysis = <span className="text-brand-accent">await</span> sorentix.evaluate(system_architecture);<br/>
-                    <br/>
-                    <span className="text-zinc-500">{"{"}</span><br/>
-                    &nbsp;&nbsp;scalability: <span className="text-green-600">0.94</span>,<br/>
-                    &nbsp;&nbsp;maintainability: <span className="text-green-600">0.88</span>,<br/>
-                    &nbsp;&nbsp;security_score: <span className="text-green-600">0.91</span>,<br/>
-                    &nbsp;&nbsp;recommendations: [<span className="text-brand-accent">"Optimize API Latency"</span>, <span className="text-brand-accent">"Refactor Auth Module"</span>]<br/>
+                    <span className="text-brand-accent">const</span> analysis = <span className="text-brand-accent">await</span> sorentix.evaluate(system_architecture);<br />
+                    <br />
+                    <span className="text-zinc-500">{"{"}</span><br />
+                    &nbsp;&nbsp;scalability: <span className="text-green-600">0.94</span>,<br />
+                    &nbsp;&nbsp;maintainability: <span className="text-green-600">0.88</span>,<br />
+                    &nbsp;&nbsp;security_score: <span className="text-green-600">0.91</span>,<br />
+                    &nbsp;&nbsp;recommendations: [<span className="text-brand-accent">"Optimize API Latency"</span>, <span className="text-brand-accent">"Refactor Auth Module"</span>]<br />
                     <span className="text-zinc-500">{"}"}</span>
                   </div>
                 </div>
@@ -207,14 +207,14 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Floating elements */}
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-brand-accent/10 rounded-full blur-3xl"></div>
             <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-brand-black/5 rounded-full blur-3xl"></div>
           </motion.div>
         </div>
       </div>
-      
+
       {/* Background Text */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20vw] font-black text-zinc-50/50 select-none pointer-events-none -z-10 whitespace-nowrap">
         SORENTIX
@@ -261,7 +261,7 @@ const Services = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               whileHover={{ y: -10 }}
               className="bg-white p-8 border border-zinc-200 hover:border-brand-black transition-all group"
@@ -302,7 +302,7 @@ const MatrixSection = () => {
             <p className="text-zinc-400 text-lg mb-10 leading-relaxed">
               Ein strukturierter Evaluationsansatz zur Analyse und Bewertung von Software-Systemen über mehrere technische Dimensionen hinweg.
             </p>
-            
+
             <div className="space-y-6">
               {[
                 { title: "Architektur-Audit", desc: "Bewertung der Systemarchitektur auf Zukunftsfähigkeit." },
@@ -321,26 +321,26 @@ const MatrixSection = () => {
                 </div>
               ))}
             </div>
-            
+
             <div className="mt-12 p-6 border-l-2 border-brand-accent bg-zinc-900/50">
               <p className="italic text-zinc-300">
                 "Das Ergebnis für Kunden: Klare technische Einschätzung, strukturierte Handlungsempfehlungen und fundierte Entscheidungsgrundlagen für technische Investitionen."
               </p>
             </div>
           </div>
-          
+
           <div className="relative">
             {/* Visual representation of the Matrix */}
             <div className="grid grid-cols-3 gap-4">
               {Array.from({ length: 9 }).map((_, i) => (
-                <motion.div 
+                <motion.div
                   key={i}
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ delay: i * 0.1 }}
                   className="aspect-square border border-zinc-800 flex flex-col items-center justify-center p-4 hover:bg-brand-accent/10 transition-colors cursor-default"
                 >
-                  <div className="text-brand-accent font-mono text-xs mb-2">0{i+1}</div>
+                  <div className="text-brand-accent font-mono text-xs mb-2">0{i + 1}</div>
                   <div className="w-1 h-1 bg-zinc-700 rounded-full mb-2"></div>
                   <div className="text-[8px] font-mono text-zinc-500 uppercase tracking-widest text-center">
                     {["Analysis", "Structure", "Matrix", "Logic", "Data", "Scale", "Code", "Audit", "Result"][i]}
@@ -348,13 +348,13 @@ const MatrixSection = () => {
                 </motion.div>
               ))}
             </div>
-            
+
             {/* Decorative elements */}
             <div className="absolute -top-20 -right-20 w-64 h-64 bg-brand-accent/20 rounded-full blur-[100px]"></div>
           </div>
         </div>
       </div>
-      
+
       {/* Background Grid */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="h-full w-full" style={{ backgroundImage: 'radial-gradient(circle, #333 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
@@ -370,9 +370,9 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <div className="aspect-[4/5] bg-zinc-100 overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
-              <img 
-                src="https://picsum.photos/seed/professional-developer/800/1000" 
-                alt="Shakil Jansberg" 
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800&h=1000"
+                alt="Shakil Jansberg"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -382,7 +382,7 @@ const About = () => {
               <div className="text-brand-accent text-xs font-bold uppercase tracking-widest">Founder & Lead Engineer</div>
             </div>
           </div>
-          
+
           <div>
             <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-brand-accent mb-4">Über Sorentix</h2>
             <h3 className="text-4xl font-bold tracking-tighter mb-8">PRÄZISION TRIFFT LEIDENSCHAFT.</h3>
@@ -392,7 +392,7 @@ const About = () => {
             <p className="text-zinc-600 mb-10 leading-relaxed">
               Mein Fokus liegt auf Clean Architecture und einer strukturierten, analytischen Herangehensweise an komplexe Problemstellungen. Mit Sorentix verbinde ich Engineering-Exzellenz mit strategischer Beratung.
             </p>
-            
+
             <div className="grid grid-cols-2 gap-8 mb-10">
               <div>
                 <div className="text-3xl font-bold mb-2">100%</div>
@@ -403,7 +403,7 @@ const About = () => {
                 <div className="text-xs uppercase tracking-widest text-zinc-500 font-bold">Hybrid Collaboration</div>
               </div>
             </div>
-            
+
             <div className="flex items-center gap-4 p-4 bg-zinc-50 border border-zinc-100">
               <ShieldCheck className="w-6 h-6 text-brand-accent" />
               <span className="text-sm font-bold uppercase tracking-widest">Verlässlichkeit & Qualität "Made in Germany"</span>
@@ -427,7 +427,7 @@ const Contact = () => {
               <p className="text-zinc-400 text-lg mb-12 max-w-md">
                 Lassen Sie uns über Ihr Projekt sprechen. Ob kurzfristige Unterstützung oder langfristige Partnerschaft.
               </p>
-              
+
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center">
@@ -443,7 +443,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-white p-8 md:p-10">
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -475,7 +475,7 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          
+
           {/* Background decoration */}
           <div className="absolute top-0 right-0 w-1/2 h-full bg-brand-accent/5 -skew-x-12 translate-x-1/2"></div>
         </div>
@@ -490,13 +490,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <Logo className="scale-75 origin-left items-start" showSubtitle={true} />
-          
+
           <div className="flex flex-wrap justify-center gap-8">
             <a href="#" className="text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-brand-black transition-colors">Impressum</a>
             <a href="#" className="text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-brand-black transition-colors">Datenschutz</a>
             <a href="#" className="text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-brand-black transition-colors">AGB</a>
           </div>
-          
+
           <div className="text-xs text-zinc-400 font-mono">
             © {new Date().getFullYear()} Sorentix. Built with Precision.
           </div>
