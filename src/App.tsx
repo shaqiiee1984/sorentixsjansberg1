@@ -189,13 +189,13 @@ const Hero = () => {
                   </div>
                   <div className="text-zinc-400 mb-2">// Sorentix Intelligence Matrix v1.0</div>
                   <div className="text-brand-black">
-                    <span className="text-brand-accent">const</span> analysis = <span className="text-brand-accent">await</span> sorentix.evaluate(system_architecture);<br />
+                    <span className="text-brand-hero">const</span> analysis = <span className="text-brand-hero">await</span> sorentix.evaluate(system_architecture);<br />
                     <br />
                     <span className="text-zinc-500">{"{"}</span><br />
                     &nbsp;&nbsp;scalability: <span className="text-green-600">0.94</span>,<br />
                     &nbsp;&nbsp;maintainability: <span className="text-green-600">0.88</span>,<br />
                     &nbsp;&nbsp;security_score: <span className="text-green-600">0.91</span>,<br />
-                    &nbsp;&nbsp;recommendations: [<span className="text-brand-accent">"Optimize API Latency"</span>, <span className="text-brand-accent">"Refactor Auth Module"</span>]<br />
+                    &nbsp;&nbsp;recommendations: [<span className="text-brand-hero">"Optimize API Latency"</span>, <span className="text-brand-hero">"Refactor Auth Module"</span>]<br />
                     <span className="text-zinc-500">{"}"}</span>
                   </div>
                 </div>
@@ -264,9 +264,9 @@ const Services = () => {
             <motion.div
               key={index}
               whileHover={{ y: -10 }}
-              className="bg-white p-8 border border-zinc-200 hover:border-brand-black transition-all group"
+              className="bg-white p-8 border border-zinc-200 hover:border-brand-accent transition-all group"
             >
-              <div className="w-12 h-12 bg-zinc-50 flex items-center justify-center mb-6 group-hover:bg-brand-black group-hover:text-white transition-colors">
+              <div className="w-12 h-12 bg-zinc-50 flex items-center justify-center mb-6 group-hover:bg-brand-accent group-hover:text-white transition-colors">
                 {service.icon}
               </div>
               <h4 className="text-xl font-bold mb-4">{service.title}</h4>
